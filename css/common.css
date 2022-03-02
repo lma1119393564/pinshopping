@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?7kkyc2') format('truetype'), url('../fonts/icomoon.woff?7kkyc2') format('woff'), url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+
+/* 修改字体颜色 */
+
+.style_red {
+    color: #c81623;
+}
+
+
+/* 导航栏制作 */
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shortcut .rf {
+    background-color: #f1f1f1;
+    height: 31px;
+}
+
+.shortcut ul li {
+    position: relative;
+    float: left;
+}
+
+.shortcut ul li i {
+    position: absolute;
+    top: 10px;
+    padding-left: 5px;
+    height: 12px;
+    width: 12px;
+    font-family: 'icomoon';
+    line-height: 12px;
+}
+
+.shortcut .rf .ico {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.shortcut .rf .ico:hover {
+    background-color: white;
+    /* border: #f1f1f1 1px solid; */
+    border-bottom: 0px;
+}
+
+.shortcut .rf ul li:nth-of-type(even) {
+    height: 12px;
+    width: 1px;
+    background: #666;
+    margin: 9px 15px 9px 15px;
+}
+
+
+/* 下拉列表制作 */
+
+.shortcut .rf .down_list {
+    position: absolute;
+    display: none;
+    margin-left: -10px;
+    width: 200px;
+    border: #f1f1f1 1px solid;
+    border-top: transparent;
+    background-color: white;
+    z-index: 1;
+}
+
+.shortcut .rf .ico:hover .down_list {
+    display: block;
+}
+
+.shortcut .rf .down_list dd,
+.shortcut .rf .down_list dt {
+    padding: 0px 15px 0 15px;
+}
+
+.shortcut .rf .down_list dt {
+    font-weight: 700;
+}
+
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: skyblue; */
+}
+
+.header .logo {
+    position: absolute;
+    left: -20px;
+    top: 25px;
+    height: 57px;
+    width: 219px;
+    background: url(../images/logo.png) no-repeat center;
+    font-size: 0px;
+}
+
+.header .search {
+    position: absolute;
+    top: 25px;
+    left: 347px;
+    width: 540px;
+    height: 37px;
+    background-color: pink;
+    border: #b1191a 1.5px solid;
+    vertical-align: bottom;
+}
+
+.header .search input[type='search'] {
+    float: left;
+    padding-left: 10px;
+    width: 457px;
+    height: 34px;
+}
+
+.header .search button {
+    font-family: 'icomoon';
+    font-size: 18px;
+    float: right;
+    width: 80px;
+    height: 34px;
+    color: white;
+    background-color: #b1191a;
+}
+
+.header .hot_word {
+    position: absolute;
+    top: 64px;
+    left: 347px;
+    height: 20px;
+    width: 540px;
+    line-height: 20px;
+}
+
+.header .hot_word ul li {
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+.header .shopcar {
+    position: absolute;
+    right: 65px;
+    top: 25px;
+    height: 37px;
+    width: 140px;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 37px;
+    padding-left: 10px;
+    border: 1px #dfdfdf solid;
+}
+
+.header .shopcar::before {
+    position: absolute;
+    content: '\e93a';
+    font-family: 'icomoon';
+    left: 20px;
+    color: #b1191a;
+}
+
+.header .shopcar::after {
+    margin-left: 5px;
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.header .shopcar span {
+    position: absolute;
+    padding: 0 5px 0 5px;
+    top: -5px;
+    right: 20px;
+    height: 14px;
+    /* width: 14px; */
+    line-height: 14px;
+    color: white;
+    background-color: #e60012;
+    border-radius: 7px 7px 7px 0;
+}
+
+.nav {
+    height: 47px;
+    width: 100%;
+    border-bottom: 2px #b1191a solid;
+}
+
+.navbox {
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.nav_left {
+    float: left;
+    /* height: 510px; */
+    width: 210px;
+    /* background-color: #3519b1; */
+    color: white;
+}
+
+
+/* 商品分类伸缩 */
+
+
+/* .nav_left_down dd:nth-of-type(n) {
+    display: none;
+}
+
+.nav_left_down:hover dd {
+    display: block;
+} */
+
+.nav_left_down dt {
+    height: 47px;
+    font-size: 18px;
+    background-color: #b1191a;
+}
+
+.nav_left_down a {
+    display: block;
+    /* margin-left: 2px; */
+    padding-left: 9px;
+    height: 31px;
+    width: 210px;
+    color: white;
+    background-color: #c81623;
+    font-size: 14px;
+    text-align: left;
+    line-height: 31px;
+}
+
+.nav_left_down a::after {
+    margin-right: 20px;
+    float: right;
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.nav_left_down a:hover {
+    background-color: #fff;
+    border-left: #c81623 2px solid;
+    color: #c81623;
+}
+
+.nav_left_down a:hover::after {
+    color: #fff;
+}
+
+.nav_right {
+    float: left;
+    height: 45px;
+    font-size: 18px;
+}
+
+.nav_right ul li {
+    float: left;
+}
+
+.nav_right ul li a {
+    display: inline-block;
+    padding: 0px 25px 0px 25px;
+}
+
+.footer {
+    margin-top: 20px;
+    height: 420px;
+    background-color: #f5f5f5;
+}
+
+.footer .w .footer_top {
+    height: 110px;
+    width: 1200px;
+}
+
+.footer .w .footer_top ul {
+    height: 110px;
+    width: 1200px;
+}
+
+.footer .w .footer_top ul li {
+    float: left;
+    margin: 25px;
+    /* margin: 35px; */
+    position: relative;
+    /* height: 110px; */
+    height: 50px;
+    width: 190px;
+}
+
+.footer .w .footer_top .zheng {
+    position: absolute;
+    height: 54px;
+    width: 52px;
+    background: url(../images/icons.png) -252px 0px no-repeat;
+}
+
+.footer .w .footer_top li h5 {
+    position: absolute;
+    font-size: 14px;
+    top: 8px;
+    left: 60px;
+}
+
+.footer .w .footer_top li em {
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+}
+
+footer .w .footer_center {
+    height: 189px;
+    border-top: #ededed 2px solid;
+    border-bottom: #ededed 2px solid;
+}
+
+footer .w .footer_center li {
+    float: left;
+    margin: 20px 35px;
+    margin-right: 80px;
+}
+
+footer .w .footer_center dt {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer .w .footer_center dl img {
+    margin-left: -10px;
+    height: 100px;
+    width: 100px;
+}
+
+footer .w .footer_bottom {
+    height: 120px;
+    text-align: center;
+    /* line-height: 120px; */
+}
+
+footer .w .footer_bottom .copyright {
+    height: 32px;
+    margin-top: 10px;
+}
+
+footer .w .footer_bottom .links {
+    line-height: 32px;
+    height: 32px;
+    margin-top: 10px;
+}
